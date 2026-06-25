@@ -8,6 +8,7 @@ function normalizeAnswer(str) {
     return (str || '').toString().toLowerCase().trim()
         .replace(/ß/g, 'ss')
         .replace(/ä/g, 'a').replace(/ö/g, 'o').replace(/ü/g, 'u')
+        .replace(/ae/g, 'a').replace(/oe/g, 'o').replace(/ue/g, 'u')
         .replace(/[ăâ]/g, 'a').replace(/î/g, 'i').replace(/[șş]/g, 's').replace(/[țţ]/g, 't')
         .replace(/…/g, '...').replace(/\s*\.\.\.\s*/g, ' ')
         .replace(/\s*\/\s*/g, ' ').replace(/\s*,\s*/g, ' ')
